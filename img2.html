@@ -1,0 +1,27 @@
+
+<!-- 
+    MAP VE AREA
+Görselleriniz hyperlink atamanız durumunda görselin tüm alanı link alanı haline dönüşecektir. Görselin herhangi bir yerine tıklanılması durumunda görsel sizi tanımlanan bağlantıya gönderecektir. <img> etiketleri için kullanılan <map> ve <area> etiketleri ile resmin içindeki koordinatlarla belirlediğimiz bir alanı sadece link haline getirebiliriz. Eklediğimiz <area> etiketi kadar belirlenen alanı bir resim üzerinden birçok bağlantıya link verebiliriz.
+    Örneğin Instagram'da bazı satıcılarda gördüğünüz bir insan fotoğraf üzerinde pantolon ve ayakkabının ürün linklerini ayrı ayrı vermek isterseniz kullanabilirsiniz 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Image Maps</h2>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+    <img src="Adsız.png" alt="Workplace" usemap="#workmap" width="450" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="https://cdn.cimri.io/image/1200x1200/appledizstbilgisayarfiyatlar_438732615.jpg" alt="computer">
+        <area shape="rect" coords="290,172,333,250" href="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/129876-2-2_large.jpg" alt="phone">
+        <area shape="circle" coords="337,300,44" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG" alt="coffee">
+    </map>
+</body>
+</html>

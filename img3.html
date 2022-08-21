@@ -1,0 +1,50 @@
+<!-- onload Event'i Kullanımı 
+    Bu olay görsel yüklenmesi tamamlandığında çalışacak fonksiyonu belirler. Herhangi bir nedenle görsel yüklenemezse ya da belirtilen  adreste resim yoksa fonksiyon çalışmaz.
+
+    Aşağıdaki örnekte görsel yüklenmesi tamamlandığında resimYuklendi() fonksiyonu çalışacak ve ekrana Resim Yüklendi. uyarısı JavaScript tarafından bastırılacak. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+</head>
+<body>
+    <!-- <img src="Adsız.png" onload="resimYuklendi()" />
+
+    
+    <script>
+        function resimYuklendi(){
+            alert("Resim yüklendi.")
+        }
+    </script> -->
+
+
+    <hr>
+    <hr>
+    <hr>
+
+    <picture>
+        <source srcset="https://image.freepik.com/free-photo/selective-focus-shot-brown-cat-posing-camera_181624-25909.jpg" media="(max-width: 500px)">
+        <source srcset="https://image.freepik.com/free-photo/selective-focus-shot-gray-cat-with-angry-cat-face_181624-13282.jpg " media="(max-width: 1000px)">
+        <img src="https://image.freepik.com/free-photo/white-cat-lies-woman-s-knees_8353-539.jpg" alt="kedi">
+    </picture>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

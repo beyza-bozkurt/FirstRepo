@@ -1,0 +1,76 @@
+
+<!-- 
+resim bir üst dizinde kalıyor olabilir. Bu durumda bir üst dizine çıkıp images dizinini bulup resmi çağırmak gerekiyor. (Üst dizine çıkmak için ../ kullanırız.) 
+<img src="../images/ornek.jpg"/>
+
+-->
+
+
+
+<!-- 
+Bu şekilde istediğiniz kadar üst dizine çıkabilirsiniz.
+<img src="../../images/ornek.jpg"/> 
+-->
+
+
+<!-- 
+alt="" Kullanımı
+Alt textlerin temel amacı, görüntüleri göremeyen kullanıcılar için metinler sunmaktır. Kullanıcı görseli görüntüleyemez ise 
+<img src="../images/kedi.jpg" alt="Yavru Kedi"/> 
+ -->
+
+
+ <!-- 
+title="" Kullanımı
+Title özelliği kullanıcıyı bilgilendirme amacı taşır. Cursor(mouse imleci) ile görselin üzerine gelince bu özelliğe verilen text mesajı görünür. Ek açıklama gerektirecek resimlerde kullanabiliriz. Bilgilendirme amacı taşır.
+<img src="../images/kedi.jpg" title="image"/>
+
+-->
+
+
+<!-- 
+width ve height Kullanımı
+<img src="resim.jpg" width="300" />
+<img src="resim.jpg" height="400" />
+<img src="resim.jpg" width="300" height="600" />
+<img src="resim.jpg" height="100%" /> 
+-->
+
+
+<!-- 
+border Kullanımı
+Görsele 3 pixel kalınlıkta border
+<img src="resim.jpg" border="3" /> 
+-->
+
+
+<!-- 
+align Kullanımı
+Web sayfasında resmin gözükeceği pozisyonu belirlemede align özelliği kullanılır. Bu özelliğe verilebilecek değerler şunlardır: left, right. Görselin sağa veya sola yaslı çıkmasını sağlar.
+<img src="resim.jpg" align="right" />
+ -->
+
+
+ <!-- 
+    Görsele Link Vermek
+ Görsele link vermek için imgtag'i a taginin içerisinde kullanılır. Yönlendirilmek istenen yerin URL'i a taginin href özelliğine yazılır. Görsel ise a taginin açıklama kısmına eklenir. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="https://www.kodluyoruz.org/" target="_blank">
+        <img src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png" alt="">
+    </a>
+    
+</body>
+</html>
+
+

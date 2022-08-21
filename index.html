@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatikaDev</title>
+
+    <!-- 
+        
+        <script src="myJavascript.js" async></script>  
+        Eğer sayfanın yüklenmeye devam ederken eşzamanlı olarak bu etiketlerle belirlediğimiz scriptlerin de yüklenmesini ve hazırlanmasını istiyorsak, yani bu kısmın asenkron çalışmasını istiyorsak etiketimize bu özelliği ekliyoruz -->
+
+
+    <!-- 
+        <script src="myJavascript.js" async defer></script> 
+        Eğer bu etiketin sayfa yüklendikten sonra yüklenip çalıştırılmasını istiyorsak o zaman async özelliğinin yanına defer özelliğini de eklememiz gerekiyor
+    -->
+
+
+    <!-- 
+        CORS cross origin resource sharing
+        bu etiketimiz de farklı kaynaklardaki, farklı domainlerdeki scriptleri yüklememiz için bize yardımcı oluyor.
+
+
+        crossorigin= "use-credentials"
+        Eğer bir kaynaktan(aynı domain dahil) bir şey yüklemek için belli bilgileri( Çerezlerimiz olabilir, HTTP basit giriş bilgileri olabilir) göndermemiz gerekiyorsa bu özelliğin değeri bu olur.
+
+        crossorigin="anonymous"
+        Eğer anonim şekilde erişmemiz gerekiyorsa yani herhangi bir bilgiye ihtiyaç yoksa 
+     -->
+     
+     <!-- 
+        integrity özelliği
+        CDN dediğimiz bu gibi hazır scriptleri eklediğimiz durumlarda bir doğrulama yöntemine ihtiyaç duyuyoruz.
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+     -->
+
+
+     <!-- 
+        type özelliği
+        yüklenecek dosyanın içeriğinin, browser tarafından nasıl yorumlanması gerektiğini belirtir. Örnek olarak javascript dosyası yüklemek için yüklenecek kodların javascript kodunu belirtmek için şöyle yazabiliriz 
+
+        <script type="application/javascript">
+        document.getElementById("someTestDiv").innerHTML = "This code runs as js";
+        </script>
+      -->
+
+
+
+      <!-- 
+        LİNK ETİKETİ
+        Bu özelliğin açılımı Hypertext REFerence şeklindedir. Örnek olarak bir CSS sayfasını HTML dökümanımız ile ilişkilendirmek için şu kodu kullanabiliriz :
+    
+        <link rel="stylesheet" href="styles.css "> 
+    
+
+        href özelliğini hem dış kaynaklardan hem de dökümanımızın bulunduğu dosyadan ilişkilendirme yapmak için kullanabiliriz.
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        rel özelliği 
+        Dış kaynaktaki dosyayı dökümanımıza ne şekilde ilişkilendirmek istediğimizi belirttiğimiz kısımdır. En çok kullanılan değerleri "stylesheet" ve "icon" dur. Stylesheet , eklemek istediğimiz dosyanın bir stil dosyası olduğunu söyler.
+
+      -->
+
+
+      <!-- 
+        <meta charset="UTF-8">
+        charset vardır. Latin alfabesi için verilen kod UTF-8 dir.
+
+
+        <meta http-equiv="refresh" content="10;URL=kodluyoruz.html">
+        Yukarıdaki kodda sayfa yüklendikten 10 saniye sonra URL ile verdiğimiz değer olan kodluyoruz.html'ye yönlendirilecek. 
+
+       -->
+</head>
+<body>
+
+    <a href="https://www.kodluyoruz.org/"><h1> Kodluyoruz </h1></a>
+
+    <p>patika dev</p>
+
+    <p> <b>Lorem</b> ipsum dolor sit amet.</p>
+    <br>
+    <hr>
+    <br>
+    <p> <b>Lorem</b> ipsum dolor sit, amet consectetur adipisicing.</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+    </ul>
+    
+    <ol>
+        <li>html</li>
+        <li>Css</li>
+        <li>Java</li>
+    </ol>
+
+    <button> <a href="https://www.kodluyoruz.org/">Kodluyoruz </a> </button> <br>
+    <img src="https://media.kommunity.com/communities/kodluyoruz/17636/27973298_748761155331694_1126054678819484889_n.png" alt="Kodluyoruz logosu">
+
+
+    <br>
+
+    <iframe width="703" height="395" src="https://www.youtube.com/embed/Mat_80lSykk" title="HANGİSİ GERÇEK MANKEN?! ft.@Aynisinemalar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
